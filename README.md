@@ -28,18 +28,18 @@ Um sistema de chat peer-to-peer implementado em Python com suporte a criptografi
 
 ```bash
 # Terminal 1 - Servidor
-cd Chatpy
+cd chatp2p
 python server_simple.py
 # Output: [*] Para conectar de outros computadores, use o IP: 192.168.0.173
 
 # Terminal 2 - Cliente 1
-cd Chatpy
+cd chatp2p
 python client_simple.py
 # Digite o IP: 192.168.0.173 (ou Enter para localhost)
 # Digite seu nome: Alice
 
 # Terminal 3 - Cliente 2 (outro computador)
-cd Chatpy
+cd chatp2p
 python client_simple.py
 # Digite o IP: 192.168.0.173
 # Digite seu nome: Bob
@@ -50,7 +50,7 @@ python client_simple.py
 ## 🚀 Começar rapidamente
 
 1. **Clone ou baixe o projeto**
-2. **Navegue para a pasta:** `cd Chatpy`
+2. **Navegue para a pasta:** `cd chatp2p`
 3. **Execute o servidor:** `python server_simple.py`
 4. **Em outro terminal, execute o cliente:** `python client_simple.py`
 5. **Pressione Enter** para conectar ao localhost
@@ -65,13 +65,13 @@ python client_simple.py
 
 1. **Iniciar o servidor:**
    ```bash
-   cd Chatpy
+   cd chatp2p
    python server_simple.py
    ```
 
 2. **Conectar clientes:**
    ```bash
-   cd Chatpy
+   cd chatp2p
    python client_simple.py
    ```
 
@@ -85,37 +85,17 @@ python client_simple.py
 
 2. **Iniciar o servidor:**
    ```bash
-   cd Chatpy
+   cd chatp2p
    python server.py
    ```
 
 3. **Conectar clientes:**
    ```bash
-   cd Chatpy
+   cd chatp2p
    python client.py
    ```
 
-## Como usar - Versão C ⚙️
 
-### Compilar
-```bash
-# Compilar o servidor
-gcc -o server server.c -lpthread
-
-# Compilar o cliente
-gcc -o client client.c -lpthread
-```
-
-### Executar
-1. Execute o servidor primeiro:
-```bash
-./server
-```
-
-2. Em outro terminal, execute o cliente:
-```bash
-./client
-```
 
 ## Funcionalidades
 
@@ -175,7 +155,7 @@ gcc -o client client.c -lpthread
 ## Estrutura do projeto
 
 ```
-Chatpy/
+chatp2p/
 ├── server_simple.py      # Servidor com codificação Base64 (recomendado)
 ├── client_simple.py      # Cliente com codificação Base64 (recomendado)
 ├── server.py             # Servidor com criptografia AES
